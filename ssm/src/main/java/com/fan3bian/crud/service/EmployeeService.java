@@ -87,4 +87,9 @@ public class EmployeeService {
 		employeeMapper.deleteByExample(example);
 	}
 
+	public List<Employee> getList() {
+		
+		return employeeMapper.selectByExampleWithDept(null);
+	}
+
 }
